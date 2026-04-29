@@ -11,7 +11,7 @@ isFreePreview: false
 
 المدخل الإجباري لأي Plugin في `Codex` هو:
 
-```text
+```bash
 .codex-plugin/plugin.json
 ```
 
@@ -34,7 +34,7 @@ isFreePreview: false
 
 ## البنية التي يتوقعها Codex
 
-```text
+```bash
 my-plugin/
   .codex-plugin/
     plugin.json

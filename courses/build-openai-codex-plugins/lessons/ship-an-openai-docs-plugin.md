@@ -11,7 +11,7 @@ isFreePreview: false
 
 في هذا الدرس سنجمع ما سبق في مثال واحد عملي: Plugin اسمه:
 
-```text
+```bash
 openai-docs-workshop
 ```
 
@@ -25,7 +25,7 @@ openai-docs-workshop
 
 ## الخطوة 1: أنشئ هيكل الإضافة
 
-```text
+```bash
 openai-docs-workshop/
   .codex-plugin/
     plugin.json
@@ -66,12 +66,14 @@ openai-docs-workshop/
 
 ## الخطوة 3: اكتب skill عربية عملية
 
-```md
+```yaml
 ---
 name: openai-docs-review
 description: Use when the user needs OpenAI docs comparison, migration notes, or implementation checklists in Arabic.
 ---
+```
 
+```markdown
 ## Workflow
 1. Read the relevant docs first.
 2. Separate stable facts from time-sensitive guidance.

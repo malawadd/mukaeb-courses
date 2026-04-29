@@ -30,7 +30,7 @@ isFreePreview: false
 
 ## شكل skill داخل الإضافة
 
-```text
+```bash
 my-plugin/
   skills/
     openai-docs-review/
@@ -39,12 +39,14 @@ my-plugin/
 
 ومثال بسيط:
 
-```md
+```yaml
 ---
 name: openai-docs-review
 description: Use when comparing two OpenAI docs pages, extracting implementation differences, or preparing a migration checklist.
 ---
+```
 
+```markdown
 1. Read the referenced docs first.
 2. Extract concrete changes only.
 3. Separate stable guidance from volatile guidance.
@@ -82,12 +84,14 @@ description: Use when comparing two OpenAI docs pages, extracting implementation
 
 ## مثال عملي: skill داخل Plugin للبحث في وثائق OpenAI
 
-```md
+```yaml
 ---
 name: openai-plugin-architect
 description: Use when designing Codex plugins that bundle skills, MCP servers, or OpenAI-related implementation guidance.
 ---
+```
 
+```markdown
 ## Purpose
 Help the user design Codex plugins with accurate file structure and safe rollout steps.
 
