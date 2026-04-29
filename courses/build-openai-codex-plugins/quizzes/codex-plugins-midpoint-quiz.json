@@ -1,0 +1,50 @@
+{
+  "title": "اختبار بناء إضافات Codex",
+  "lessonSlug": "codex-plugins-midpoint-quiz",
+  "questions": [
+    {
+      "prompt": "ما الفرق الأدق بين Skill وPlugin في Codex؟",
+      "options": [
+        "لا يوجد فرق، كلاهما مجرد اسمين لنفس الشيء",
+        "Skill هي workflow مكتوب، وPlugin هو وحدة التوزيع القابلة للتثبيت التي قد تضم skills وMCP وApps",
+        "Plugin هو نوع من موديلات OpenAI",
+        "Skill تستخدم فقط في ChatGPT وPlugin فقط في API"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "الوثائق الحالية تميّز بين skill كصيغة authoring وبين plugin كوحدة تثبيت وتوزيع يمكنها ضم عدة مكونات."
+    },
+    {
+      "prompt": "أين يجب أن يوجد الملف الإجباري لتعريف الإضافة؟",
+      "options": [
+        "داخل `skills/`",
+        "داخل `assets/`",
+        "داخل `.codex-plugin/plugin.json`",
+        "داخل `.agents/plugins/marketplace.json`"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "نقطة الدخول الإلزامية للإضافة هي `.codex-plugin/plugin.json`."
+    },
+    {
+      "prompt": "ما الدور الأساسي لـ `marketplace.json`؟",
+      "options": [
+        "تخزين محتوى `SKILL.md`",
+        "تعريف كتالوج الإضافات ومواقعها وسياسات تثبيتها",
+        "إنشاء MCP server تلقائيًا",
+        "استبدال ملف `config.toml` بالكامل"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "marketplace هو كتالوج يصف ما الذي يجب أن يراه Codex كمصدر plugins وكيف يثبته ويديره."
+    },
+    {
+      "prompt": "متى يكون من الأفضل الانتقال من skill محلية إلى Plugin؟",
+      "options": [
+        "عندما تريد فقط تعديل جملة واحدة",
+        "عندما تريد توزيع workflow على فريق، أو تجميع skill مع MCP أو app integration",
+        "عندما تريد منع Codex من قراءة `SKILL.md`",
+        "عندما لا تعرف بعد ما الذي ستبنيه"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "الانتقال إلى Plugin يكون منطقيًا عندما توجد حاجة للتوزيع أو لتغليف مكونات متعددة في حزمة قابلة للتثبيت."
+    }
+  ]
+}
